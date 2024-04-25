@@ -1,0 +1,66 @@
+<html lang="en">
+<head> 
+            <tittle> </tittle>
+                <link rel="stylesheet" href="style.css"> 
+</head>
+<style>
+            body{
+               
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .heart{
+                height: 100px;
+                width: 100px;
+                background-color:  rgb(139, 5, 139);
+                position: relative;
+                transform: rotate(40deg);
+                box-shadow: -10px 20px 100px  rgb(139, 5, 139);
+                animation: palpitar 0.5s linear infinite alternate;
+            }
+            .textos{
+                position: left;
+                margin-bottom: 50px;
+                text-align: calc();
+            }
+            h1{color: white}
+            h2{color: white}
+            @keyframes palpitar{
+                0%{transform: rotate(45deg)scale(1.10);}
+                80%{transform: rotate(45deg)scale(1.0);}
+                100%{transform: rotate(45deg)scale(0.8);}
+            }
+            .heart::before{
+                content:"" ;
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                background:  rgb(139, 5, 139);
+                right: 50%;
+                border-radius: 50%;
+                box-shadow: 20px 20px 100px rgb(139, 5, 139);
+            }            
+            .heart::after{
+                content:"" ;
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                background:  rgb(139, 5, 139);
+                top: -50%;
+                border-radius: 80%;
+                box-shadow: 20px 20px 150px rgb(139, 5, 139);
+            }
+
+
+</style>
+        
+<body>
+        <div class="textos"><h1>TQM</h1><br><br><br><br><br><br><br><br><h2>NUTRIYIYAN <br>bañate hasta aca me llega el olor</h2></div>
+        <br><br> <div class="heart"></div><br><br>
+        <br><br><img src="sti.webp" alt="" width="200" height="200">
+
+</body>
+</html>
